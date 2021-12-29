@@ -9,7 +9,6 @@ import SwiftUI
 
 struct BarChart: View {
     var title: String
-    var legend: String
     var barColor: Color
     var data: [ChartData]
     
@@ -21,8 +20,11 @@ struct BarChart: View {
             Text(title)
                 .bold()
                 .font(.largeTitle)
-            Text("Current value: \(currentValue)")
-                .font(.headline)
+            Spacer()
+            Text("Salt Lake City, Utah")
+            Spacer()
+            Spacer()
+            Spacer()
             GeometryReader { geometry in
                 VStack {
                     HStack {
@@ -30,19 +32,7 @@ struct BarChart: View {
                             BarChartCell(value: normalizedValue(index: i), barColor: barColor)
                         }
                     }
-                    if currentLabel.isEmpty {
-                        Text(legend)
-                            .bold()
-                            .foregroundColor(.black)
-                            .padding(5)
-                            .background(RoundedRectangle(cornerRadius: 5).foregroundColor(.white).shadow(radius: 3))
-                    } else {
-                        Text(currentLabel)
-                            .bold()
-                            .foregroundColor(.black)
-                            .padding(5)
-                            .background(RoundedRectangle(cornerRadius: 5).foregroundColor(.white).shadow(radius: 3))
-                    }
+                    
                 }
             }
         }
@@ -50,28 +40,26 @@ struct BarChart: View {
     }
     
     func normalizedValue(index: Int) -> Double {
+        let maxHeight: Double = 0.9
+        
         var allValues: [Double] {
-            var values = [Double]()
-            for data in data {
-                values.append(data.value)
-            }
-            return values
+            return data.map { $0.value }
         }
         
         guard let max = allValues.max() else {
-            return 1
+            return maxHeight
         }
         
         if max != 0 {
-            return Double(data[index].value/Double(max))
+            return Double(data[index].value/Double(max)*maxHeight)
         } else {
-            return 1
+            return maxHeight
         }
     }
 }
 
 struct BarChart_Previews: PreviewProvider {
     static var previews: some View {
-        BarChart(title: "Confirmed COVID-19 cases", legend: "x1000", barColor: .blue, data: chartDataSet)
+        BarChart(title: "Confirmed COVID-19 cases", barColor: .blue, data: chartDataSet)
     }
 }
