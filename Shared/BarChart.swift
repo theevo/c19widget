@@ -9,8 +9,14 @@ import SwiftUI
 
 struct BarChart: View {
     var title: String
+    var city: String
     var barColor: Color
     var data: [ChartData]
+    
+    var dataMax: Double {
+        let dataValues = data.map { $0.value }
+        return dataValues.max() ?? 0
+    }
     
     @State private var currentValue = ""
     @State private var currentLabel = ""
@@ -21,15 +27,20 @@ struct BarChart: View {
                 .bold()
                 .font(.largeTitle)
             Spacer()
-            Text("Salt Lake City, Utah")
+            Text(city)
             Spacer()
             Spacer()
             Spacer()
             GeometryReader { geometry in
+                let fullBarHeight = Double(geometry.size.height * 0.9)
+                
                 VStack {
                     HStack {
                         ForEach(0..<data.count, id: \.self) { i in
-                            BarChartCell(value: normalizedValue(index: i), barColor: barColor)
+                            BarChartCell(value: data[i].value,
+                                         max: dataMax,
+                                         fullBarHeight: fullBarHeight,
+                                         barColor: barColor)
                         }
                     }
                     
@@ -38,28 +49,13 @@ struct BarChart: View {
         }
         .padding()
     }
-    
-    func normalizedValue(index: Int) -> Double {
-        let maxHeight: Double = 0.9
-        
-        var allValues: [Double] {
-            return data.map { $0.value }
-        }
-        
-        guard let max = allValues.max() else {
-            return maxHeight
-        }
-        
-        if max != 0 {
-            return Double(data[index].value/Double(max)*maxHeight)
-        } else {
-            return maxHeight
-        }
-    }
 }
 
 struct BarChart_Previews: PreviewProvider {
     static var previews: some View {
-        BarChart(title: "Confirmed COVID-19 cases", barColor: .blue, data: chartDataSet)
+        BarChart(title: "Confirmed COVID-19 cases",
+                 city: "Salt Lake City, Utah",
+                 barColor: .blue,
+                 data: chartDataSet)
     }
 }
