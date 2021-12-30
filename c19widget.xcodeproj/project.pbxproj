@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
+		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
 		AC8BDD9A277CEB3F00B702B2 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD99277CEB3F00B702B2 /* Tests_iOSLaunchTests.swift */; };
 		AC8BDDA4277CEB3F00B702B2 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDA3277CEB3F00B702B2 /* Tests_macOS.swift */; };
@@ -44,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
 		AC8BDD80277CEB3E00B702B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC8BDD81277CEB3F00B702B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		AC8BDD7E277CEB3E00B702B2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AC559E56277E20D900F2A382 /* DateHelper.swift */,
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
 				AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */,
@@ -316,6 +320,7 @@
 				AC8BDDBF277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC2277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC8BDDA9277CEB3F00B702B2 /* ContentView.swift in Sources */,
+				AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */,
 				AC8BDDBC277CEE8400B702B2 /* BarChartCell.swift in Sources */,
 				AC8BDDA7277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
 			);
@@ -328,6 +333,7 @@
 				AC8BDDC0277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC8BDDAA277CEB3F00B702B2 /* ContentView.swift in Sources */,
+				AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */,
 				AC8BDDBD277CEE8400B702B2 /* BarChartCell.swift in Sources */,
 				AC8BDDA8277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
 			);
