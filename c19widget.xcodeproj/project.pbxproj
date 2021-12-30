@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountryResponse.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
@@ -99,11 +100,11 @@
 		AC8BDD79277CEB3E00B702B2 = {
 			isa = PBXGroup;
 			children = (
-				AC559E55277E175400F2A382 /* README.md */,
+				AC8BDD96277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDD7E277CEB3E00B702B2 /* Shared */,
 				AC8BDD8D277CEB3F00B702B2 /* macOS */,
-				AC8BDD96277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDDA2277CEB3F00B702B2 /* Tests macOS */,
+				AC559E55277E175400F2A382 /* README.md */,
 				AC8BDD87277CEB3F00B702B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +112,7 @@
 		AC8BDD7E277CEB3E00B702B2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */,
 				AC559E56277E20D900F2A382 /* DateHelper.swift */,
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
