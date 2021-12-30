@@ -8,20 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    let last7days = """
-                    Last 7 days
-                    Mon
-                    Tue
-                    Wed
-                    Thu
-                    Fri
-                    Sat
-                    Sun
-                    """
     
     var body: some View {
-        Text(last7days)
-            .padding()
+        VStack {
+            BarChart(title: "Confirmed COVID-19 cases",
+                 city: "Salt Lake City, Utah",
+                 barColor: .blue,
+                 data: chartDataSet)
+            Text("Last updated: 12/30/2021 3:10 PM")
+                .font(.caption2)
+        }
     }
 }
 
