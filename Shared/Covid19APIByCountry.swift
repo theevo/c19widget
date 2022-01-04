@@ -46,13 +46,18 @@ class Covid19APIByCountry {
     private static func summarizeData(_ data: [Covid19APIByCountryResponse]) -> [ChartData] {
         
         let saltLake = data.filter { $0.city == "Salt Lake" }
-            .map { response in
-                ChartData(label: response.date.covid19WidgetShortDate(),
-                          value: response.cases)
-            }
+        let saltLakeChartData = saltLake.map { response in
+            ChartData(label: response.date.covid19WidgetShortDate,
+                      value: response.cases)
+        }
         
-        print(saltLake)
+        let saltLakeDates = saltLake.map { response in
+            (response.dateString, response.date, response.date.covid19WidgetShortDate)
+        }
         
-        return saltLake
+        print(saltLakeChartData)
+        print(saltLakeDates)
+        
+        return saltLakeChartData
     }
 }

@@ -21,10 +21,10 @@ struct DateHelper {
 }
 
 extension Date {
-    func covid19WidgetShortDate() -> String {
+    var covid19WidgetShortDate: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd"
-        
+        dateFormatter.timeZone = TimeZone(identifier: "UTC")
         return dateFormatter.string(from: self)
     }
     

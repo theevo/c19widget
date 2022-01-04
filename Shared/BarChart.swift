@@ -37,7 +37,8 @@ struct BarChart: View {
                 VStack {
                     HStack {
                         ForEach(0..<data.count, id: \.self) { i in
-                            BarChartCell(value: data[i].value,
+                            BarChartCell(label: data[i].label,
+                                         value: data[i].value,
                                          max: dataMax,
                                          fullBarHeight: fullBarHeight,
                                          barColor: barColor)

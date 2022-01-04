@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BarChartCell: View {
+    var label: String
     var value: Double
     var max: Double
     var fullBarHeight: Double
@@ -38,7 +39,7 @@ struct BarChartCell: View {
                             .frame(height: height, alignment: .trailing)
                             .overlay(
                                 Text("\(value, specifier: "%.0f")")
-                                    .font(.footnote)
+                                    .font(.caption2)
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
                                     .frame(width: textWidth)
@@ -48,9 +49,10 @@ struct BarChartCell: View {
                     }
                     VStack {
                         Spacer()
-                        
                     }
                 }
+                Text(label)
+                    .font(.caption)
             }
         }
     }
@@ -59,7 +61,8 @@ struct BarChartCell: View {
 struct BarChartCell_Previews: PreviewProvider {
     static var previews: some View {
         let deviceHeight = Double(UIScreen.main.bounds.size.height * 0.8)
-        BarChartCell(value: 3800,
+        BarChartCell(label: "12/31",
+                     value: 3800,
                      max: 4000,
                      fullBarHeight: deviceHeight,
                      barColor: .blue)
