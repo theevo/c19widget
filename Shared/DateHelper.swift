@@ -28,8 +28,7 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
-    func covid19ApiDateString() -> String {
-        // https://api.covid19api.com/country/south-africa/status/confirmed?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z
+    var covid19ApiDateString: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: self) + "T00:00:00Z"

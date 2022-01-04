@@ -9,7 +9,7 @@ import Foundation
 
 class Covid19APIByCountry {
     static func getData() async -> [ChartData]? {
-        guard let url = URL(string: "https://api.covid19api.com/country/united-states/status/confirmed?from=2021-12-23T00:00:00Z&to=2021-12-29T00:00:00Z&province=Utah") else {
+        guard let url = buildURL() else {
             print("Invalid URL")
             return nil
         }
@@ -59,5 +59,26 @@ class Covid19APIByCountry {
         print(saltLakeDates)
         
         return saltLakeChartData
+    }
+    
+    private static func buildURL() -> URL? {
+        //        "https://api.covid19api.com/country/united-states/status/confirmed?from=2021-12-23T00:00:00Z&to=2021-12-29T00:00:00Z&province=Utah"
+        
+        let baseURL = URL(string: "https://api.covid19api.com/country/united-states/status/confirmed")!
+        
+        var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
+        urlComponents?.queryItems = buildQueryItems()
+        
+        return urlComponents?.url
+    }
+    
+    private static func buildQueryItems() -> [URLQueryItem] {
+        let dateHelper = DateHelper()
+        
+        return [
+            URLQueryItem(name: "from", value: dateHelper.sevenDaysAgo.covid19ApiDateString),
+            URLQueryItem(name: "to", value: dateHelper.yesterday.covid19ApiDateString),
+            URLQueryItem(name: "province", value: "Utah")
+        ]
     }
 }
