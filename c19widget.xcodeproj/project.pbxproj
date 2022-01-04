@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
+		AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
@@ -324,6 +326,7 @@
 				AC8BDDA9277CEB3F00B702B2 /* ContentView.swift in Sources */,
 				AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */,
 				AC8BDDBC277CEE8400B702B2 /* BarChartCell.swift in Sources */,
+				AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */,
 				AC8BDDA7277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +340,7 @@
 				AC8BDDAA277CEB3F00B702B2 /* ContentView.swift in Sources */,
 				AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */,
 				AC8BDDBD277CEE8400B702B2 /* BarChartCell.swift in Sources */,
+				AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */,
 				AC8BDDA8277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
