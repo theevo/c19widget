@@ -12,7 +12,7 @@ import Foundation
          "Country": "United States of America",
          "CountryCode": "US",
          "Province": "Utah",
-         "City": "Sevier",
+         "City": "Sevier", // This is actually COUNTY, not CITY
          "CityCode": "49041",
          "Lat": "38.75",
          "Lon": "-111.81",
