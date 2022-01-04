@@ -31,9 +31,9 @@ struct Covid19APIByCountryResponse: Codable {
     var cityCode: String
     var lat: String
     var lon: String
-    var cases: Int
+    var cases: Double
     var status: String
-//    var date: String
+    var dateString: String
     
     enum CodingKeys: String, CodingKey {
         case country = "Country"
@@ -45,6 +45,16 @@ struct Covid19APIByCountryResponse: Codable {
         case lon = "Lon"
         case cases = "Cases"
         case status = "Status"
-//        case date = "Date"
+        case dateString = "Date"
+    }
+}
+
+extension Covid19APIByCountryResponse {
+    var date: Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
+        let date = dateFormatter.date(from: dateString)
+        
+        return date ?? Date()
     }
 }

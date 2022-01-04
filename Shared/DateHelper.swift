@@ -21,7 +21,14 @@ struct DateHelper {
 }
 
 extension Date {
-    func covid19ApiString() -> String {
+    func covid19WidgetShortDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd"
+        
+        return dateFormatter.string(from: self)
+    }
+    
+    func covid19ApiDateString() -> String {
         // https://api.covid19api.com/country/south-africa/status/confirmed?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
