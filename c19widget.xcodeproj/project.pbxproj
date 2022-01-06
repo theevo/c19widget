@@ -29,6 +29,8 @@
 		AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDC1277CEFD800B702B2 /* ChartData.swift */; };
 		ACB05B882784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
 		ACB05B892784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
+		ACD7B2182787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
+		ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		AC8BDDC1277CEFD800B702B2 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountry.swift; sourceTree = "<group>"; };
+		ACD7B2172787913C00E5BF9B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "c19widget--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		AC8BDD79277CEB3E00B702B2 = {
 			isa = PBXGroup;
 			children = (
+				ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */,
 				AC8BDD96277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDD7E277CEB3E00B702B2 /* Shared */,
 				AC8BDD8D277CEB3F00B702B2 /* macOS */,
@@ -121,6 +126,7 @@
 				AC559E56277E20D900F2A382 /* DateHelper.swift */,
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
+				ACD7B2172787913C00E5BF9B /* LocationManager.swift */,
 				ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */,
 				AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */,
 				AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */,
@@ -333,6 +339,7 @@
 				AC8BDDBC277CEE8400B702B2 /* BarChartCell.swift in Sources */,
 				AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */,
 				AC8BDDA7277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
+				ACD7B2182787913C00E5BF9B /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +355,7 @@
 				AC8BDDBD277CEE8400B702B2 /* BarChartCell.swift in Sources */,
 				AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */,
 				AC8BDDA8277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
+				ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,8 +511,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QY69PUF72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "c19widget--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -532,8 +543,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QY69PUF72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "c19widget--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -567,6 +581,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -593,6 +608,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

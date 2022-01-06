@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject private var locationManager = LocationManager()
+    
     @State private var location: String = "Salt Lake City, Utah"
     @State private var c19Data: [ChartData] = chartDataSet
     @State private var updatedTime: String = ""
@@ -20,6 +22,8 @@ struct ContentView: View {
                  barColor: .blue,
                  data: c19Data)
             Text(updatedTime)
+                .font(.caption2)
+            Text(locationManager.lastLocation.description)
                 .font(.caption2)
         }
         .task {
