@@ -18,6 +18,10 @@ struct DateHelper {
     var sevenDaysAgo: Date {
         today.advanced(by: -secondsInADay * 7)
     }
+    
+    func daysAgo(_ days: Int) -> Date {
+        return today.advanced(by: -secondsInADay * Double(days))
+    }
 }
 
 extension Date {

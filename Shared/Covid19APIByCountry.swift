@@ -8,6 +8,9 @@
 import Foundation
 
 class Covid19APIByCountry {
+    static var province: String = "California"
+    static var city: String = "Los Angeles"
+    
     static func getData() async -> [ChartData]? {
         guard let url = buildURL() else {
             print("Invalid URL")
@@ -45,7 +48,7 @@ class Covid19APIByCountry {
     
     private static func summarizeData(_ data: [Covid19APIByCountryResponse]) -> [ChartData] {
         
-        let saltLake = data.filter { $0.city == "Salt Lake" }
+        let saltLake = data.filter { $0.city == city }
         let saltLakeChartData = saltLake.map { response in
             ChartData(label: response.date.covid19WidgetShortDate,
                       value: response.cases)
@@ -69,7 +72,10 @@ class Covid19APIByCountry {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         urlComponents?.queryItems = buildQueryItems()
         
-        return urlComponents?.url
+        let finalURL = urlComponents?.url
+        print("finalURL = " + (finalURL?.absoluteString ?? "nil"))
+        
+        return finalURL
     }
     
     private static func buildQueryItems() -> [URLQueryItem] {
@@ -78,7 +84,7 @@ class Covid19APIByCountry {
         return [
             URLQueryItem(name: "from", value: dateHelper.sevenDaysAgo.covid19ApiDateString),
             URLQueryItem(name: "to", value: dateHelper.yesterday.covid19ApiDateString),
-            URLQueryItem(name: "province", value: "Utah")
+            URLQueryItem(name: "province", value: province)
         ]
     }
 }

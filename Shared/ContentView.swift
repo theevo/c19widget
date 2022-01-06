@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var location: String = "Salt Lake City, Utah"
     @State private var c19Data: [ChartData] = chartDataSet
     
     var body: some View {
         VStack {
             BarChart(title: "Confirmed COVID-19 cases",
-                 city: "Salt Lake City, Utah",
+                 city: location,
                  barColor: .blue,
                  data: c19Data)
             Text("Last updated: 12/30/2021 3:10 PM")
@@ -29,7 +30,7 @@ struct ContentView: View {
         if let data = await Covid19APIByCountry.getData() {
             
             c19Data = data
-            
+            location = Covid19APIByCountry.city + ", " + Covid19APIByCountry.province
         }
     }
 }
