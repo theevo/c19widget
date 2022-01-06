@@ -11,7 +11,7 @@ class Covid19APIByCountry {
     static var province: String = "California"
     static var city: String = "Los Angeles"
     
-    static func getData() async -> [ChartData]? {
+    static func getData() async -> ([ChartData], Date)? {
         guard let url = buildURL() else {
             print("Invalid URL")
             return nil
@@ -25,7 +25,7 @@ class Covid19APIByCountry {
                 
                 print("Got data")
                 
-                return summarizeData(decodedResponse)
+                return (summarizeData(decodedResponse), Date())
                 
                 
 //                print(decodedResponse)

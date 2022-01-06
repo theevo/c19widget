@@ -32,6 +32,13 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
+    var covid19WidgetDateTime: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .medium
+        return dateFormatter.string(from: self)
+    }
+    
     var covid19ApiDateString: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
