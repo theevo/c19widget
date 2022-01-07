@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
+		AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
+		AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
@@ -54,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountryResponse.swift; sourceTree = "<group>"; };
+		AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewModel.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
 				ACD7B2172787913C00E5BF9B /* LocationManager.swift */,
+				AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */,
 				ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */,
 				ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */,
 				AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */,
@@ -337,6 +341,7 @@
 			files = (
 				AC8BDDBF277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC2277CEFD800B702B2 /* ChartData.swift in Sources */,
+				AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */,
 				AC8BDDA9277CEB3F00B702B2 /* ContentView.swift in Sources */,
 				ACD7B21F2787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */,
 				AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */,
@@ -354,6 +359,7 @@
 			files = (
 				AC8BDDC0277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */,
+				AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */,
 				AC8BDDAA277CEB3F00B702B2 /* ContentView.swift in Sources */,
 				ACD7B2202787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */,
 				AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */,
