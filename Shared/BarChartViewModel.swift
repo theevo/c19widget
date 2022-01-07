@@ -34,9 +34,11 @@ public class BarChartViewModel: ObservableObject {
     public func update() {
         Task {
             if let (chartDataArray, timeUpdated) = await Covid19APIByCountry.getData() {
-                barChart = chartDataArray
-                location = Covid19APIByCountry.city + ", " + Covid19APIByCountry.province
-                updatedTime = "Last updated: " + timeUpdated.covid19WidgetDateTime
+                DispatchQueue.main.async {
+                    self.barChart = chartDataArray
+                    self.location = Covid19APIByCountry.city + ", " + Covid19APIByCountry.province
+                    self.updatedTime = "Last updated: " + timeUpdated.covid19WidgetDateTime
+                }
             }
         }
     }
