@@ -49,9 +49,32 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
+        
+        Task {
+            await location.getCountryStateCounty()
+        }
+        
         lastLocation = location.coordinate.description
         print(#function, location)
         locationManager.stopUpdatingLocation()
+    }
+}
+
+extension CLLocation {
+    func getCountryStateCounty() async {
+        do {
+            let placemarks = try await CLGeocoder().reverseGeocodeLocation(self)
+            
+            if let stateAbbreviation = placemarks.first?.administrativeArea {
+                
+                print("*** Got state: ", stateAbbreviation)
+                print("**** Full state name: ", StateNamesHelper(abbreviation: stateAbbreviation).stateFullName)
+            }
+            print("*** Got county: ", placemarks.first?.subAdministrativeArea)
+            print("*** Got city: ", placemarks.first?.locality)
+        } catch let error {
+            print("couldn't get the country, city, county...", error)
+        }
     }
 }
 

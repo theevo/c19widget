@@ -31,6 +31,8 @@
 		ACB05B892784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
 		ACD7B2182787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 		ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
+		ACD7B21F2787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
+		ACD7B2202787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,7 @@
 		ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountry.swift; sourceTree = "<group>"; };
 		ACD7B2172787913C00E5BF9B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "c19widget--iOS--Info.plist"; sourceTree = "<group>"; };
+		ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNamesHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
 				ACD7B2172787913C00E5BF9B /* LocationManager.swift */,
+				ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */,
 				ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */,
 				AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */,
 				AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */,
@@ -334,6 +338,7 @@
 				AC8BDDBF277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC2277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC8BDDA9277CEB3F00B702B2 /* ContentView.swift in Sources */,
+				ACD7B21F2787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */,
 				AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */,
 				ACB05B882784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */,
 				AC8BDDBC277CEE8400B702B2 /* BarChartCell.swift in Sources */,
@@ -350,6 +355,7 @@
 				AC8BDDC0277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC8BDDAA277CEB3F00B702B2 /* ContentView.swift in Sources */,
+				ACD7B2202787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */,
 				AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */,
 				ACB05B892784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */,
 				AC8BDDBD277CEE8400B702B2 /* BarChartCell.swift in Sources */,
