@@ -1,5 +1,10 @@
 # COVID-19 Widget
 
+## ToDo
+
+- `.onAppear` doesn't seem to trigger after even 30 minutes after being in the background. what will work?
+
+
 ## Overview
 
 Display a 7-day graph of cases in your country.
