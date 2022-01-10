@@ -11,8 +11,6 @@ struct ContentView: View {
     
     @StateObject private var viewModel = BarChartViewModel()
     
-    @StateObject private var locationManager = LocationManager()
-    
     var body: some View {
         VStack {
             BarChart(title: "Confirmed COVID-19 cases",

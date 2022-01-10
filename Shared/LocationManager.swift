@@ -13,7 +13,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     private let locationManager = CLLocationManager()
     @Published var locationStatus: CLAuthorizationStatus?
-    @Published var lastLocation: String = ""
+    @Published var currentPlacemark: CLPlacemark?
     
     override init() {
         super.init()
@@ -51,29 +51,24 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         
         Task {
-            await location.getCountryStateCounty()
+            currentPlacemark = await location.getPlacemark()
         }
         
-        lastLocation = location.coordinate.description
-        print(#function, location)
         locationManager.stopUpdatingLocation()
     }
 }
 
 extension CLLocation {
-    func getCountryStateCounty() async {
+    func getPlacemark() async -> CLPlacemark? {
         do {
             let placemarks = try await CLGeocoder().reverseGeocodeLocation(self)
+                       
+            guard let placemark = placemarks.first else { return nil }
             
-            if let stateAbbreviation = placemarks.first?.administrativeArea {
-                
-                print("*** Got state: ", stateAbbreviation)
-                print("**** Full state name: ", StateNamesHelper(abbreviation: stateAbbreviation).stateFullName)
-            }
-            print("*** Got county: ", placemarks.first?.subAdministrativeArea)
-            print("*** Got city: ", placemarks.first?.locality)
+            return placemark
         } catch let error {
-            print("couldn't get the country, city, county...", error)
+            print("Error: reverseGeocodeLocation failed:", error)
+            return nil
         }
     }
 }

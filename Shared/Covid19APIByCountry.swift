@@ -8,10 +8,16 @@
 import Foundation
 
 class Covid19APIByCountry {
-    static var province: String = "California"
-    static var city: String = "Los Angeles"
+    /// county is optional because in US territories like Guam do not have counties in this API
+    var county: String?
+    var state: String
     
-    static func getData() async -> ([ChartData], Date)? {
+    public init(county: String?, state: String) {
+        self.county = county
+        self.state = state
+    }
+    
+    public func getData() async -> ([ChartData], Date)? {
         guard let url = buildURL() else {
             print("Invalid URL")
             return nil
@@ -46,9 +52,9 @@ class Covid19APIByCountry {
         return nil
     }
     
-    private static func summarizeData(_ data: [Covid19APIByCountryResponse]) -> [ChartData] {
+    private func summarizeData(_ data: [Covid19APIByCountryResponse]) -> [ChartData] {
         
-        let saltLake = data.filter { $0.city == city }
+        let saltLake = data.filter { $0.city == county }
         let saltLakeChartData = saltLake.map { response in
             ChartData(label: response.date.covid19WidgetShortDate,
                       value: response.cases)
@@ -64,7 +70,7 @@ class Covid19APIByCountry {
         return saltLakeChartData
     }
     
-    private static func buildURL() -> URL? {
+    private func buildURL() -> URL? {
         //        "https://api.covid19api.com/country/united-states/status/confirmed?from=2021-12-23T00:00:00Z&to=2021-12-29T00:00:00Z&province=Utah"
         
         let baseURL = URL(string: "https://api.covid19api.com/country/united-states/status/confirmed")!
@@ -78,13 +84,13 @@ class Covid19APIByCountry {
         return finalURL
     }
     
-    private static func buildQueryItems() -> [URLQueryItem] {
+    private func buildQueryItems() -> [URLQueryItem] {
         let dateHelper = DateHelper()
         
         return [
             URLQueryItem(name: "from", value: dateHelper.sevenDaysAgo.covid19ApiDateString),
             URLQueryItem(name: "to", value: dateHelper.yesterday.covid19ApiDateString),
-            URLQueryItem(name: "province", value: province)
+            URLQueryItem(name: "province", value: state)
         ]
     }
 }
