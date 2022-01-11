@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
+		AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */; };
 		AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E61278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
@@ -40,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC35E962278E20C6003DB041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC8BDD7A277CEB3E00B702B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8BDD85277CEB3F00B702B2;
+			remoteInfo = "c19widget (iOS)";
+		};
 		AC8BDD94277CEB3F00B702B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC8BDD7A277CEB3E00B702B2 /* Project object */;
@@ -58,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountryResponse.swift; sourceTree = "<group>"; };
+		AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = c19widgetUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateNamesHelperTests.swift; sourceTree = "<group>"; };
 		AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewModel.swift; sourceTree = "<group>"; };
 		AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -84,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC35E95B278E20C6003DB041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC8BDD83277CEB3F00B702B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,10 +132,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC35E95F278E20C6003DB041 /* c19widgetUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */,
+			);
+			path = c19widgetUnitTests;
+			sourceTree = "<group>";
+		};
 		AC8BDD79277CEB3E00B702B2 = {
 			isa = PBXGroup;
 			children = (
 				ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */,
+				AC35E95F278E20C6003DB041 /* c19widgetUnitTests */,
 				AC8BDD96277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDD7E277CEB3E00B702B2 /* Shared */,
 				AC8BDD8D277CEB3F00B702B2 /* macOS */,
@@ -155,6 +181,7 @@
 				AC8BDD8C277CEB3F00B702B2 /* c19widget.app */,
 				AC8BDD93277CEB3F00B702B2 /* Tests iOS.xctest */,
 				AC8BDD9F277CEB3F00B702B2 /* Tests macOS.xctest */,
+				AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +215,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC35E95D278E20C6003DB041 /* c19widgetUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC35E964278E20C6003DB041 /* Build configuration list for PBXNativeTarget "c19widgetUnitTests" */;
+			buildPhases = (
+				AC35E95A278E20C6003DB041 /* Sources */,
+				AC35E95B278E20C6003DB041 /* Frameworks */,
+				AC35E95C278E20C6003DB041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC35E963278E20C6003DB041 /* PBXTargetDependency */,
+			);
+			name = c19widgetUnitTests;
+			productName = c19widgetUnitTests;
+			productReference = AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AC8BDD85277CEB3F00B702B2 /* c19widget (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC8BDDAF277CEB3F00B702B2 /* Build configuration list for PBXNativeTarget "c19widget (iOS)" */;
@@ -268,6 +313,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					AC35E95D278E20C6003DB041 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AC8BDD85277CEB3F00B702B2;
+					};
 					AC8BDD85277CEB3F00B702B2 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -301,11 +350,19 @@
 				AC8BDD8B277CEB3F00B702B2 /* c19widget (macOS) */,
 				AC8BDD92277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDD9E277CEB3F00B702B2 /* Tests macOS */,
+				AC35E95D278E20C6003DB041 /* c19widgetUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC35E95C278E20C6003DB041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC8BDD84277CEB3F00B702B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +396,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC35E95A278E20C6003DB041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC8BDD82277CEB3F00B702B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +463,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC35E963278E20C6003DB041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC8BDD85277CEB3F00B702B2 /* c19widget (iOS) */;
+			targetProxy = AC35E962278E20C6003DB041 /* PBXContainerItemProxy */;
+		};
 		AC8BDD95277CEB3F00B702B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC8BDD85277CEB3F00B702B2 /* c19widget (iOS) */;
@@ -411,6 +481,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AC35E965278E20C6003DB041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QY69PUF72;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joybending.c19widgetUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c19widget.app/c19widget";
+			};
+			name = Debug;
+		};
+		AC35E966278E20C6003DB041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QY69PUF72;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joybending.c19widgetUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c19widget.app/c19widget";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		AC8BDDAD277CEB3F00B702B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +642,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QY69PUF72;
 				ENABLE_PREVIEWS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "c19widget--iOS--Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
@@ -563,6 +675,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QY69PUF72;
 				ENABLE_PREVIEWS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "c19widget--iOS--Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
@@ -719,6 +832,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC35E964278E20C6003DB041 /* Build configuration list for PBXNativeTarget "c19widgetUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC35E965278E20C6003DB041 /* Debug */,
+				AC35E966278E20C6003DB041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC8BDD7D277CEB3E00B702B2 /* Build configuration list for PBXProject "c19widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
