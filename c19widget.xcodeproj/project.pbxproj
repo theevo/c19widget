@@ -11,6 +11,8 @@
 		AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
+		AC4C9E61278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
+		AC4C9E62278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
 		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
@@ -57,6 +59,7 @@
 /* Begin PBXFileReference section */
 		AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountryResponse.swift; sourceTree = "<group>"; };
 		AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewModel.swift; sourceTree = "<group>"; };
+		AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 			children = (
 				AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */,
 				AC559E56277E20D900F2A382 /* DateHelper.swift */,
+				AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */,
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
 				ACD7B2172787913C00E5BF9B /* LocationManager.swift */,
@@ -349,6 +353,7 @@
 				AC8BDDBC277CEE8400B702B2 /* BarChartCell.swift in Sources */,
 				AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */,
 				AC8BDDA7277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
+				AC4C9E61278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */,
 				ACD7B2182787913C00E5BF9B /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +372,7 @@
 				AC8BDDBD277CEE8400B702B2 /* BarChartCell.swift in Sources */,
 				AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */,
 				AC8BDDA8277CEB3F00B702B2 /* c19widgetApp.swift in Sources */,
+				AC4C9E62278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */,
 				ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

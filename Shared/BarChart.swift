@@ -18,8 +18,19 @@ struct BarChart: View {
         return dataValues.max() ?? 0
     }
     
-    @State private var currentValue = ""
-    @State private var currentLabel = ""
+    @State private var deviceOrientation: UIDeviceOrientation = .unknown
+    {
+        didSet {
+            switch deviceOrientation {
+            case .landscapeLeft, .landscapeRight:
+                maxHeightRatio = 0.85
+            default:
+                maxHeightRatio = 0.9
+            }
+        }
+    }
+    
+    @State private var maxHeightRatio: CGFloat = 0.9
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -29,10 +40,8 @@ struct BarChart: View {
             Spacer()
             Text(city)
             Spacer()
-            Spacer()
-            Spacer()
             GeometryReader { geometry in
-                let fullBarHeight = Double(geometry.size.height * 0.9)
+                let fullBarHeight = Double(geometry.size.height * maxHeightRatio)
                 
                 VStack {
                     HStack {
@@ -49,6 +58,9 @@ struct BarChart: View {
             }
         }
         .padding()
+        .onRotate { newOrientation in
+            deviceOrientation = newOrientation
+        }
     }
 }
 
