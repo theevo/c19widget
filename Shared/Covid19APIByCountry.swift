@@ -88,7 +88,7 @@ class Covid19APIByCountry {
         let dateHelper = DateHelper()
         
         return [
-            URLQueryItem(name: "from", value: dateHelper.sevenDaysAgo.covid19ApiDateString),
+            URLQueryItem(name: "from", value: dateHelper.sevenDaysBeforeYesterday.covid19ApiDateString),
             URLQueryItem(name: "to", value: dateHelper.yesterday.covid19ApiDateString),
             URLQueryItem(name: "province", value: state)
         ]

@@ -14,6 +14,7 @@
 		AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E61278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
 		AC4C9E62278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
+		AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */; };
 		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
@@ -72,6 +73,7 @@
 		AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
 		AC8BDD80277CEB3E00B702B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC8BDD81277CEB3F00B702B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */,
+				AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */,
 			);
 			path = c19widgetUnitTests;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */,
+				AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

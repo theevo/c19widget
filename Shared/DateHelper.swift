@@ -8,19 +8,20 @@
 import Foundation
 
 struct DateHelper {
-    private let today = Date()
+    /// defaults to today
+    var startDate = Date()
     private let secondsInADay: Double = 24 * 60 * 60
     
     var yesterday: Date {
-        today.advanced(by: -secondsInADay)
+        startDate.advanced(by: -secondsInADay)
     }
     
-    var sevenDaysAgo: Date {
-        today.advanced(by: -secondsInADay * 7)
+    var sevenDaysBeforeYesterday: Date {
+        startDate.advanced(by: -secondsInADay * 7)
     }
     
     func daysAgo(_ days: Int) -> Date {
-        return today.advanced(by: -secondsInADay * Double(days))
+        return startDate.advanced(by: -secondsInADay * Double(days))
     }
 }
 
