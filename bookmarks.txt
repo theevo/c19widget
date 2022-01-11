@@ -94,9 +94,6 @@ https://www.appypie.com/observedobject-published-swiftui-how-to
 cannot convert value of type 'binding ' to expected argument type - Google Search
 https://www.google.com/search?client=safari&rls=en&q=cannot+convert+value+of+type+%27binding+%27+to+expected+argument+type&ie=UTF-8&oe=UTF-8
 
-5 largest cities in the us - Google Search
-https://www.google.com/search?client=safari&rls=en&q=5+largest+cities+in+the+us&ie=UTF-8&oe=UTF-8
-
 SwiftUI - Determining Current Devi… | Apple Developer Forums
 https://developer.apple.com/forums/thread/126878
 
