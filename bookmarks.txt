@@ -1,0 +1,123 @@
+COVID19 API
+https://covid19api.com/
+
+CSSEGISandData/COVID-19: Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
+https://github.com/CSSEGISandData/COVID-19
+
+Case Counts | coronavirus
+https://coronavirus.utah.gov/case-counts/#overview
+
+Case Data | Harris County COVID-19 Data Hub
+https://covid-harriscounty.hub.arcgis.com/pages/cumulative-data
+
+Download Reported COVID Cases Timeline | Download Reported COVID Cases Timeline | Harris County COVID-19 Data Hub
+https://covid-harriscounty.hub.arcgis.com/datasets/40256f837cd344d787b0414255b4f529_0/explore
+
+COVID-19 - Cases
+https://www.arcgis.com/apps/dashboards/45e18cba105c478697c76acbbf86a6bc
+
+Texas COVID-19 - Data Definitions
+https://dshs.texas.gov/coronavirus/DataDefinitions.aspx
+
+New York State Statewide COVID-19 Testing | State of New York
+https://health.data.ny.gov/Health/New-York-State-Statewide-COVID-19-Testing/xdss-u53e/data
+
+New York State Statewide COVID-19 Testing | State of New York
+https://health.data.ny.gov/Health/New-York-State-Statewide-COVID-19-Testing/xdss-u53e/data
+
+COVID-19 Information
+https://www.traviscountytx.gov/news/2020/1945-novel-coronavirus-covid-19-information
+
+Austin Travis County COVID-19 Public Dashboard
+https://austin.maps.arcgis.com/apps/dashboards/39e4f8d4acb0433baae6d15a931fa984
+
+A-TC COVID19 Public Data Hub
+https://experience.arcgis.com/experience/3793562ab87e4299b106e0c282bb1fc5
+
+Austin Travis County COVID19 Daily Counts (Public View) | Austin Travis County COVID19 Daily Counts (Public View) | A-TC COVID-19 Public Data Hub
+https://atc-covid19data-austin.hub.arcgis.com/datasets/austin::austin-travis-county-covid19-daily-counts-public-view/explore?filters=eyJMYXN0X1VwZGF0ZSI6WzE2MzgyMDY2MzM4NTUuMzQsMTY0MTQyMDAwMDAwMF19&showTable=true
+
+Dutchess, New York - Google Search
+https://www.google.com/search?client=safari&rls=en&q=Dutchess%2C+New+York&ie=UTF-8&oe=UTF-8#cobssid=s
+
+Organizing information with tables - GitHub Docs
+https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables
+
+what county is chicago in - Google Search
+https://www.google.com/search?client=safari&rls=en&q=what+county+is+chicago+in&ie=UTF-8&oe=UTF-8
+
+How to find the max value in a Swift object array? - Stack Overflow
+https://stackoverflow.com/questions/27875778/how-to-find-the-max-value-in-a-swift-object-array
+
+mvvm - Swift: Should ViewModel be a struct or class? - Stack Overflow
+https://stackoverflow.com/questions/37913904/swift-should-viewmodel-be-a-struct-or-class
+
+Xcode Tip: How to Generate Memberwise Initializer for Classes
+https://www.vadimbulavin.com/generate-memberwise-initializer/
+
+COVID-19 pandemic on Grand Princess - Wikipedia
+https://en.wikipedia.org/wiki/COVID-19_pandemic_on_Grand_Princess
+
+ios - Find city name and country from latitude and longitude in Swift - Stack Overflow
+https://stackoverflow.com/questions/44031257/find-city-name-and-country-from-latitude-and-longitude-in-swift
+
+reverseGeocodeLocation(_:completionHandler:) | Apple Developer Documentation
+https://developer.apple.com/documentation/corelocation/clgeocoder/1423621-reversegeocodelocation
+
+How to fix the error “async call in a function that does not support concurrency” - a free Swift Concurrency by Example tutorial
+https://www.hackingwithswift.com/quick-start/concurrency/how-to-fix-the-error-async-call-in-a-function-that-does-not-support-concurrency
+
+CLPlacemark | Apple Developer Documentation
+https://developer.apple.com/documentation/corelocation/clplacemark
+
+iphone - How to retrieve user's current city name? - Stack Overflow
+https://stackoverflow.com/questions/1382900/how-to-retrieve-users-current-city-name
+
+Swift US States Array
+https://gist.github.com/iamjason/8f8f4bc00c13de86bcad
+
+Swift dictionary get key for value - Stack Overflow
+https://stackoverflow.com/questions/27218669/swift-dictionary-get-key-for-value
+
+Find closest longitude and latitude in array from user location - iOS Swift - Stack Overflow
+https://stackoverflow.com/questions/33927405/find-closest-longitude-and-latitude-in-array-from-user-location-ios-swift
+
+ios - Get User's Current Location / Coordinates - Stack Overflow
+https://stackoverflow.com/questions/25296691/get-users-current-location-coordinates
+
+The lifecycle and semantics of a SwiftUI view | Swift by Sundell
+https://www.swiftbysundell.com/articles/the-lifecycle-and-semantics-of-a-swiftui-view/
+
+@ObservedObject and Friends in SwiftUI - AppyPie
+https://www.appypie.com/observedobject-published-swiftui-how-to
+
+cannot convert value of type 'binding ' to expected argument type - Google Search
+https://www.google.com/search?client=safari&rls=en&q=cannot+convert+value+of+type+%27binding+%27+to+expected+argument+type&ie=UTF-8&oe=UTF-8
+
+5 largest cities in the us - Google Search
+https://www.google.com/search?client=safari&rls=en&q=5+largest+cities+in+the+us&ie=UTF-8&oe=UTF-8
+
+SwiftUI - Determining Current Devi… | Apple Developer Forums
+https://developer.apple.com/forums/thread/126878
+
+MVVM in iOS with SwiftUI (Detailed Example + Pitfalls)
+https://matteomanferdini.com/mvvm-pattern-ios-swift/
+
+district of columbia a state - Google Search
+https://www.google.com/search?client=safari&rls=en&q=district+of+columbia+a+state&ie=UTF-8&oe=UTF-8
+
+swift - SwiftUI and MVVM - Communication between model and view model - Stack Overflow
+https://stackoverflow.com/questions/57826430/swiftui-and-mvvm-communication-between-model-and-view-model
+
+What’s the difference between @ObservedObject, @State, and @EnvironmentObject? - a free SwiftUI by Example tutorial
+https://www.hackingwithswift.com/quick-start/swiftui/whats-the-difference-between-observedobject-state-and-environmentobject
+
+Published properties in Swift | Swift by Sundell
+https://www.swiftbysundell.com/articles/published-properties-in-swift/
+
+ios - The text doesn't get wrapped in swift UI - Stack Overflow
+https://stackoverflow.com/questions/56505929/the-text-doesnt-get-wrapped-in-swift-ui
+
+swiftui text align center - Google Search
+https://www.google.com/search?client=safari&rls=en&q=swiftui+text+align+center&ie=UTF-8&oe=UTF-8
+
