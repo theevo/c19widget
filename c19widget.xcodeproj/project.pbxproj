@@ -35,6 +35,7 @@
 		AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDC1277CEFD800B702B2 /* ChartData.swift */; };
 		ACB05B882784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
 		ACB05B892784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
+		ACB9CE11278F5A67000544CE /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */; };
 		ACD7B2182787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 		ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 		ACD7B21F2787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
@@ -90,6 +91,7 @@
 		AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		AC8BDDC1277CEFD800B702B2 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountry.swift; sourceTree = "<group>"; };
+		ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
 		ACD7B2172787913C00E5BF9B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "c19widget--iOS--Info.plist"; sourceTree = "<group>"; };
 		ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNamesHelper.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */,
 				AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */,
+				ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */,
 			);
 			path = c19widgetUnitTests;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB9CE11278F5A67000544CE /* LocationManagerTests.swift in Sources */,
 				AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */,
 				AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */,
 			);
