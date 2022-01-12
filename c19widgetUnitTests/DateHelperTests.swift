@@ -10,44 +10,38 @@ import XCTest
 
 class DateHelperTests: XCTestCase {
 
+    var dateFormatter = DateFormatter()
+    let midnightTime: String = "T00:00:00Z"
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH':'mm':'ssZ"
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        dateFormatter = DateFormatter()
     }
     
     func testYesterday() {
         // given
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH':'mm':'ssZ"
-        
-        let midnightTime = "T00:00:00Z"
         let jan6 = dateFormatter.date(from: "2022-01-06" + midnightTime)!
-        let jan5 = dateFormatter.date(from: "2022-01-05" + midnightTime)!
+        let sut = DateHelper(startDate: jan6).yesterday
         
         // when
-        let dayBeforeJan6 = DateHelper(startDate: jan6).yesterday
+        let jan5 = dateFormatter.date(from: "2022-01-05" + midnightTime)!
         
         // then
-        XCTAssertEqual(dayBeforeJan6, jan5)
+        XCTAssertEqual(sut, jan5, "The day before Jan 6 should be Jan 5")
     }
     
     func testSevenBeforeYesterday() {
         // given
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH':'mm':'ssZ"
-        
-        let midnightTime = "T00:00:00Z"
         let jan6 = dateFormatter.date(from: "2022-01-06" + midnightTime)!
-        let dec30 = dateFormatter.date(from: "2021-12-30" + midnightTime)!
+        let sut = DateHelper(startDate: jan6).sevenDaysBeforeYesterday
         
         // when
-        let sevenDaysPriorToJan6 = DateHelper(startDate: jan6).sevenDaysBeforeYesterday
+        let dec30 = dateFormatter.date(from: "2021-12-30" + midnightTime)!
         
         // then
-        XCTAssertEqual(sevenDaysPriorToJan6, dec30)
+        XCTAssertEqual(sut, dec30, "Seven days before the yesterday of Jan 6 should be Dec 30")
     }
 }
