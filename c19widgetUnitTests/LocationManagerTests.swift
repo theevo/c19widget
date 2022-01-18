@@ -11,10 +11,21 @@ import CoreLocation
 
 class LocationManagerTests: XCTestCase {
     
-    override func setUpWithError() throws { }
-
-    override func tearDownWithError() throws { }
-
+//    var sut: UserLocationService!
+    var locationManager: LocationManagerMock!
+    
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        locationManager = LocationManagerMock()
+//        sut = UserLocationService(locationProvider)
+    }
+    
+    override func tearDownWithError() throws {
+//        sut = nil
+        locationManager = nil
+        try super.tearDownWithError()
+    }
+    
     func testNYCCoordinateReturnsNewYorkCounty() async throws {
         // given
         let nycCoordinate = CLLocation(latitude: 40.748441, longitude: -73.985664)
@@ -37,6 +48,17 @@ class LocationManagerTests: XCTestCase {
         
         // then
         XCTAssertEqual(sut, sfCounty)
+    }
+    
+    func testRequestAuthorization() {
+        // given
+        let sut = locationManager
+        
+        // when
+        sut?.requestAuthorization()
+        
+        // then
+        XCTAssertTrue(sut!.didUserAuthorize)
     }
 
 }

@@ -10,6 +10,9 @@
 		AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */; };
+		AC3813402790679A00A1514C /* LocationManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38133F2790679A00A1514C /* LocationManagable.swift */; };
+		AC3813412790679A00A1514C /* LocationManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38133F2790679A00A1514C /* LocationManagable.swift */; };
+		AC38134327909BA800A1514C /* LocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38134227909BA800A1514C /* LocationManagerMock.swift */; };
 		AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E61278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
@@ -40,6 +43,8 @@
 		ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 		ACD7B21F2787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
 		ACD7B2202787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
+		ACFAB8DA27976BDF007D8280 /* Placemarkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAB8D927976BDF007D8280 /* Placemarkable.swift */; };
+		ACFAB8DB27976BDF007D8280 /* Placemarkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAB8D927976BDF007D8280 /* Placemarkable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,8 @@
 		AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountryResponse.swift; sourceTree = "<group>"; };
 		AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = c19widgetUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateNamesHelperTests.swift; sourceTree = "<group>"; };
+		AC38133F2790679A00A1514C /* LocationManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagable.swift; sourceTree = "<group>"; };
+		AC38134227909BA800A1514C /* LocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerMock.swift; sourceTree = "<group>"; };
 		AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewModel.swift; sourceTree = "<group>"; };
 		AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -95,6 +102,7 @@
 		ACD7B2172787913C00E5BF9B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "c19widget--iOS--Info.plist"; sourceTree = "<group>"; };
 		ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNamesHelper.swift; sourceTree = "<group>"; };
+		ACFAB8D927976BDF007D8280 /* Placemarkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placemarkable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,7 @@
 				AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */,
 				AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */,
 				ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */,
+				AC38134227909BA800A1514C /* LocationManagerMock.swift */,
 			);
 			path = c19widgetUnitTests;
 			sourceTree = "<group>";
@@ -169,7 +178,9 @@
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
 				ACD7B2172787913C00E5BF9B /* LocationManager.swift */,
+				ACFAB8D927976BDF007D8280 /* Placemarkable.swift */,
 				AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */,
+				AC38133F2790679A00A1514C /* LocationManagable.swift */,
 				ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */,
 				ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */,
 				AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */,
@@ -408,6 +419,7 @@
 			files = (
 				ACB9CE11278F5A67000544CE /* LocationManagerTests.swift in Sources */,
 				AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */,
+				AC38134327909BA800A1514C /* LocationManagerMock.swift in Sources */,
 				AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +428,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFAB8DA27976BDF007D8280 /* Placemarkable.swift in Sources */,
+				AC3813402790679A00A1514C /* LocationManagable.swift in Sources */,
 				AC8BDDBF277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC2277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */,
@@ -435,6 +449,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFAB8DB27976BDF007D8280 /* Placemarkable.swift in Sources */,
+				AC3813412790679A00A1514C /* LocationManagable.swift in Sources */,
 				AC8BDDC0277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */,

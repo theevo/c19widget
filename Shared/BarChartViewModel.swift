@@ -43,7 +43,7 @@ public class BarChartViewModel: ObservableObject {
     public func update() {
         cancellable = locationManager.$currentPlacemark.sink(receiveValue: { [weak self] placemark in
             guard let self = self,
-                  let placemark = placemark else { return }
+                  let placemark = placemark as? CLPlacemark else { return }
             
             DispatchQueue.main.async {
                 self.location = placemark.countyCommaState

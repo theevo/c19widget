@@ -5,21 +5,29 @@
 //  Created by Theo Vora on 1/6/22.
 //
 
-import Foundation
 import CoreLocation
-//import Combine
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-    
+class LocationManager: NSObject, ObservableObject, LocationManagable {
     private let locationManager = CLLocationManager()
     @Published var locationStatus: CLAuthorizationStatus?
-    @Published var currentPlacemark: CLPlacemark?
+    
+    @Published var currentPlacemark: Placemarkable?
+    var currentPlacemarkPublished: Published<Placemarkable?> { _currentPlacemark }
+    var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { $currentPlacemark }
+        
+    var didUserAuthorize: Bool {
+        switch locationManager.authorizationStatus {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return true
+        default:
+            return false
+        }
+    }
     
     override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer // saves battery!
         locationManager.startUpdatingLocation()
     }
     
@@ -42,10 +50,23 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        locationStatus = status
-        print(#function, statusString)
+    func requestAuthorization() {
+        locationManager.requestWhenInUseAuthorization()
     }
+}
+    
+extension LocationManager: CLLocationManagerDelegate {
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        print(manager.authorizationStatus)
+        print(#function, statusString)
+        locationStatus = manager.authorizationStatus
+    }
+    
+//    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+//        locationStatus = status
+//        print(#function, statusString)
+//    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
