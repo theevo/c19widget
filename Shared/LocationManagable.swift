@@ -9,9 +9,9 @@ import Foundation
 import CoreLocation
 
 public protocol LocationManagable {
-    var didUserAuthorize: Bool { get }
     var currentPlacemark: Placemarkable? { get }
     var currentPlacemarkPublished: Published<Placemarkable?> { get }
     var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { get }
+    var userDidAuthorize: Bool { get }
     func requestAuthorization()
 }

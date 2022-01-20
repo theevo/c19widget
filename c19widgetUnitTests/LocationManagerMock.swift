@@ -17,10 +17,10 @@ class LocationManagerMock: LocationManagable {
     var currentPlacemarkPublished: Published<Placemarkable?> { _currentPlacemark }
     var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { $currentPlacemark }
     
-    var didUserAuthorize: Bool = false
+    var userDidAuthorize: Bool = false
     
     func requestAuthorization() {
-        didUserAuthorize = true
+        userDidAuthorize = true
     }
 }
 

@@ -12,7 +12,7 @@ import CoreLocation
 class LocationManagerTests: XCTestCase {
     
 //    var sut: UserLocationService!
-    var locationManager: LocationManagerMock!
+    var locationManager: LocationManagable!
     
     override func setUpWithError() throws {
         try super.setUpWithError()
@@ -58,7 +58,7 @@ class LocationManagerTests: XCTestCase {
         sut?.requestAuthorization()
         
         // then
-        XCTAssertTrue(sut!.didUserAuthorize)
+        XCTAssertTrue(sut!.userDidAuthorize)
     }
 
 }

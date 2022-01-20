@@ -15,7 +15,7 @@ class LocationManager: NSObject, ObservableObject, LocationManagable {
     var currentPlacemarkPublished: Published<Placemarkable?> { _currentPlacemark }
     var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { $currentPlacemark }
         
-    var didUserAuthorize: Bool {
+    var userDidAuthorize: Bool {
         switch locationManager.authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
             return true
