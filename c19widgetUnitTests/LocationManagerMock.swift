@@ -9,7 +9,7 @@ import c19widget
 import Combine
 
 struct PlacemarkMock: Placemarkable {
-    var countyCommaState: String = "San Francisco County, CA"
+    var countyCommaState: String = ""
 }
 
 class LocationManagerMock: LocationManagable {
@@ -21,6 +21,11 @@ class LocationManagerMock: LocationManagable {
     
     func requestAuthorization() {
         userDidAuthorize = true
+    }
+    
+    func getLocation() {
+        let newCountyString = "San Francisco County, CA"
+        currentPlacemark = PlacemarkMock(countyCommaState: newCountyString)
     }
 }
 

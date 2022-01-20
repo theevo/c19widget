@@ -16,7 +16,7 @@ class LocationManager: NSObject, ObservableObject, LocationManagable {
     var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { $currentPlacemark }
         
     var userDidAuthorize: Bool {
-        switch locationManager.authorizationStatus {
+        switch locationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
             return true
         default:
@@ -28,7 +28,7 @@ class LocationManager: NSObject, ObservableObject, LocationManagable {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer // saves battery!
-        locationManager.startUpdatingLocation()
+        locationStatus = locationManager.authorizationStatus
     }
     
     var statusString: String {
@@ -53,14 +53,35 @@ class LocationManager: NSObject, ObservableObject, LocationManagable {
     func requestAuthorization() {
         locationManager.requestWhenInUseAuthorization()
     }
+    
+    func getLocation() {
+        
+        
+//        if userDidAuthorize {
+//            print(#function, "updating location")
+            locationManager.startUpdatingLocation()
+//        } else {
+//            print(#function, "request Auth")
+//            requestAuthorization()
+//        }
+    }
 }
     
 extension LocationManager: CLLocationManagerDelegate {
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        print(manager.authorizationStatus)
-        print(#function, statusString)
         locationStatus = manager.authorizationStatus
+        
+        switch locationStatus {
+        case .authorizedWhenInUse, .authorizedAlways:
+            getLocation()
+            break
+        case .notDetermined:
+            requestAuthorization()
+            break
+        default:
+            break
+        }
     }
     
 //    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

@@ -14,4 +14,5 @@ public protocol LocationManagable {
     var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { get }
     var userDidAuthorize: Bool { get }
     func requestAuthorization()
+    func getLocation()
 }

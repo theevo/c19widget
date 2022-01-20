@@ -60,5 +60,17 @@ class LocationManagerTests: XCTestCase {
         // then
         XCTAssertTrue(sut!.userDidAuthorize)
     }
+    
+    func testGetLocation() {
+        // given
+        let sut = locationManager
+        
+        // when
+        sut?.getLocation()
+        let subject = sut?.currentPlacemark?.countyCommaState
+        
+        // then
+        XCTAssertEqual(subject, "San Francisco County, CA")
+    }
 
 }
