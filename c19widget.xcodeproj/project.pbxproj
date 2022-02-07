@@ -20,6 +20,9 @@
 		AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */; };
 		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
+		AC8AA61C27B1B4C700B3BA16 /* Covid19APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8AA61B27B1B4C700B3BA16 /* Covid19APIClientTests.swift */; };
+		AC8AA61F27B1B70300B3BA16 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = AC8AA61E27B1B70300B3BA16 /* Mocker */; };
+		AC8AA62127B1BEC500B3BA16 /* c19Response.json in Resources */ = {isa = PBXBuildFile; fileRef = AC8AA62027B1BEC500B3BA16 /* c19Response.json */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
 		AC8BDD9A277CEB3F00B702B2 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD99277CEB3F00B702B2 /* Tests_iOSLaunchTests.swift */; };
 		AC8BDDA4277CEB3F00B702B2 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDA3277CEB3F00B702B2 /* Tests_macOS.swift */; };
@@ -82,6 +85,8 @@
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
+		AC8AA61B27B1B4C700B3BA16 /* Covid19APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIClientTests.swift; sourceTree = "<group>"; };
+		AC8AA62027B1BEC500B3BA16 /* c19Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c19Response.json; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
 		AC8BDD80277CEB3E00B702B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC8BDD81277CEB3F00B702B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8AA61F27B1B70300B3BA16 /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +153,9 @@
 		AC35E95F278E20C6003DB041 /* c19widgetUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC8AA62027B1BEC500B3BA16 /* c19Response.json */,
 				AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */,
+				AC8AA61B27B1B4C700B3BA16 /* Covid19APIClientTests.swift */,
 				AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */,
 				ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */,
 				AC38134227909BA800A1514C /* LocationManagerMock.swift */,
@@ -246,6 +254,9 @@
 				AC35E963278E20C6003DB041 /* PBXTargetDependency */,
 			);
 			name = c19widgetUnitTests;
+			packageProductDependencies = (
+				AC8AA61E27B1B70300B3BA16 /* Mocker */,
+			);
 			productName = c19widgetUnitTests;
 			productReference = AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -359,6 +370,9 @@
 				Base,
 			);
 			mainGroup = AC8BDD79277CEB3E00B702B2;
+			packageReferences = (
+				AC8AA61D27B1B70300B3BA16 /* XCRemoteSwiftPackageReference "Mocker" */,
+			);
 			productRefGroup = AC8BDD87277CEB3F00B702B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8AA62127B1BEC500B3BA16 /* c19Response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +434,7 @@
 			files = (
 				ACB9CE11278F5A67000544CE /* LocationManagerTests.swift in Sources */,
 				AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */,
+				AC8AA61C27B1B4C700B3BA16 /* Covid19APIClientTests.swift in Sources */,
 				AC38134327909BA800A1514C /* LocationManagerMock.swift in Sources */,
 				AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */,
 			);
@@ -911,6 +927,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC8AA61D27B1B70300B3BA16 /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC8AA61E27B1B70300B3BA16 /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8AA61D27B1B70300B3BA16 /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC8BDD7A277CEB3E00B702B2 /* Project object */;
 }
