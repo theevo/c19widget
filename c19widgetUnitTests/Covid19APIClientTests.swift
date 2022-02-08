@@ -54,4 +54,44 @@ class Covid19APIClientTests: XCTestCase {
         
         wait(for: [expectation], timeout: 10.0)
     }
+    
+    func test_compose_URL() throws {
+        // given
+        let composedURL = Covid19APIURLBuilderMock(state: "Utah").url
+        
+        // when
+        let expectedURL = URL(string: "https://api.covid19api.com/country/united-states/status/confirmed?from=2021-12-23T00:00:00Z&to=2021-12-29T00:00:00Z&province=Utah")!
+        
+        // then
+        XCTAssertEqual(composedURL.absoluteString, expectedURL.absoluteString)
+    }
+}
+
+struct Covid19APIURLBuilderMock: Covid19APIURLBuildable {
+    var state: String
+    
+    let baseURL = URL(string: "https://api.covid19api.com/country/united-states/status/confirmed")!
+    
+    var buildQueryItems: [URLQueryItem] {
+        
+        let dateHelper = DateHelper(string: "2021-12-30")
+        
+        return [
+            URLQueryItem(name: "from", value: dateHelper.sevenDaysBeforeYesterday.covid19ApiDateString),
+            URLQueryItem(name: "to", value: dateHelper.yesterday.covid19ApiDateString),
+            URLQueryItem(name: "province", value: state)
+        ]
+    }
+    
+    var url: URL {
+        var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
+        
+        urlComponents?.queryItems = buildQueryItems
+        
+        guard let finalURL = urlComponents?.url else {
+            fatalError()
+        }
+        
+        return finalURL
+    }
 }

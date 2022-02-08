@@ -10,6 +10,7 @@ import Foundation
 struct DateHelper {
     /// defaults to today
     var startDate = Date()
+    
     private let secondsInADay: Double = 24 * 60 * 60
     
     var yesterday: Date {
@@ -22,6 +23,16 @@ struct DateHelper {
     
     func daysAgo(_ days: Int) -> Date {
         return startDate.advanced(by: -secondsInADay * Double(days))
+    }
+}
+
+extension DateHelper {
+    /// Initialize with string date
+    /// - Parameter string: date in this format: "yyyy-MM-dd"
+    init(string: String) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        self.startDate = dateFormatter.date(from: string) ?? Date()
     }
 }
 
