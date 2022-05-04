@@ -5,22 +5,30 @@
 //  Created by Theo Vora on 1/6/22.
 //
 
-import Foundation
 import CoreLocation
-//import Combine
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-    
+class LocationManager: NSObject, ObservableObject, LocationManagable {
     private let locationManager = CLLocationManager()
     @Published var locationStatus: CLAuthorizationStatus?
-    @Published var currentPlacemark: CLPlacemark?
+    
+    @Published var currentPlacemark: Placemarkable?
+    var currentPlacemarkPublished: Published<Placemarkable?> { _currentPlacemark }
+    var currentPlacemarkPublisher: Published<Placemarkable?>.Publisher { $currentPlacemark }
+        
+    var userDidAuthorize: Bool {
+        switch locationStatus {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return true
+        default:
+            return false
+        }
+    }
     
     override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer // saves battery!
+        locationStatus = locationManager.authorizationStatus
     }
     
     var statusString: String {
@@ -42,10 +50,44 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        locationStatus = status
-        print(#function, statusString)
+    func requestAuthorization() {
+        locationManager.requestWhenInUseAuthorization()
     }
+    
+    func getLocation() {
+        
+        
+//        if userDidAuthorize {
+//            print(#function, "updating location")
+            locationManager.startUpdatingLocation()
+//        } else {
+//            print(#function, "request Auth")
+//            requestAuthorization()
+//        }
+    }
+}
+    
+extension LocationManager: CLLocationManagerDelegate {
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        locationStatus = manager.authorizationStatus
+        
+        switch locationStatus {
+        case .authorizedWhenInUse, .authorizedAlways:
+            getLocation()
+            break
+        case .notDetermined:
+            requestAuthorization()
+            break
+        default:
+            break
+        }
+    }
+    
+//    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+//        locationStatus = status
+//        print(#function, statusString)
+//    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }

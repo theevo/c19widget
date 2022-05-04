@@ -2,7 +2,7 @@
 
 ## ToDo
 
-- `.onAppear` doesn't seem to trigger after even 30 minutes after being in the background. what will work?
+- `.onAppear` does not trigger after even 30 minutes after being in the background. what will work?
 
 
 ## Overview

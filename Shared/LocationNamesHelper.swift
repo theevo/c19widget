@@ -67,7 +67,7 @@ public struct StateNamesHelper {
                                    "WY": "Wyoming"]
 }
 
-extension CLPlacemark {
+extension CLPlacemark: Placemarkable {
     var city: String? {
         self.locality
     }
@@ -89,7 +89,7 @@ extension CLPlacemark {
     }
     
     /// This property is consumed by the view. returns "unknown" if county or state could not be determined
-    var countyCommaState: String {
+    public var countyCommaState: String {
         let county = self.countyCounty ?? "unknown"
         let stateAbbr = self.stateAbbreviation ?? "unknown"
         

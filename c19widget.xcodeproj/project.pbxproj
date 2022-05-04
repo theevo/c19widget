@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		AC0295E3277E5A900058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
 		AC0295E4277E5A910058D664 /* Covid19APIByCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */; };
+		AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */; };
+		AC3813402790679A00A1514C /* LocationManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38133F2790679A00A1514C /* LocationManagable.swift */; };
+		AC3813412790679A00A1514C /* LocationManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38133F2790679A00A1514C /* LocationManagable.swift */; };
+		AC38134327909BA800A1514C /* LocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38134227909BA800A1514C /* LocationManagerMock.swift */; };
 		AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */; };
 		AC4C9E61278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
 		AC4C9E62278DEED300FD573A /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */; };
+		AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */; };
 		AC752F1E277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
 		AC752F1F277E214900EDCF78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC559E56277E20D900F2A382 /* DateHelper.swift */; };
+		AC8AA61C27B1B4C700B3BA16 /* Covid19APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8AA61B27B1B4C700B3BA16 /* Covid19APIClientTests.swift */; };
+		AC8AA61F27B1B70300B3BA16 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = AC8AA61E27B1B70300B3BA16 /* Mocker */; };
+		AC8AA62127B1BEC500B3BA16 /* c19Response.json in Resources */ = {isa = PBXBuildFile; fileRef = AC8AA62027B1BEC500B3BA16 /* c19Response.json */; };
 		AC8BDD98277CEB3F00B702B2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD97277CEB3F00B702B2 /* Tests_iOS.swift */; };
 		AC8BDD9A277CEB3F00B702B2 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDD99277CEB3F00B702B2 /* Tests_iOSLaunchTests.swift */; };
 		AC8BDDA4277CEB3F00B702B2 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDA3277CEB3F00B702B2 /* Tests_macOS.swift */; };
@@ -31,15 +39,26 @@
 		AC8BDDC0277CEF9B00B702B2 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */; };
 		AC8BDDC2277CEFD800B702B2 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDC1277CEFD800B702B2 /* ChartData.swift */; };
 		AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDDC1277CEFD800B702B2 /* ChartData.swift */; };
+		ACA87F0927B307F60033B740 /* Covid19APIURLBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA87F0827B307F60033B740 /* Covid19APIURLBuildable.swift */; };
 		ACB05B882784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
 		ACB05B892784CB1300B4E49E /* Covid19APIByCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */; };
+		ACB9CE11278F5A67000544CE /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */; };
 		ACD7B2182787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 		ACD7B2192787913C00E5BF9B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B2172787913C00E5BF9B /* LocationManager.swift */; };
 		ACD7B21F2787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
 		ACD7B2202787B7BA00E5BF9B /* LocationNamesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */; };
+		ACFAB8DA27976BDF007D8280 /* Placemarkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAB8D927976BDF007D8280 /* Placemarkable.swift */; };
+		ACFAB8DB27976BDF007D8280 /* Placemarkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAB8D927976BDF007D8280 /* Placemarkable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC35E962278E20C6003DB041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC8BDD7A277CEB3E00B702B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8BDD85277CEB3F00B702B2;
+			remoteInfo = "c19widget (iOS)";
+		};
 		AC8BDD94277CEB3F00B702B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC8BDD7A277CEB3E00B702B2 /* Project object */;
@@ -58,10 +77,17 @@
 
 /* Begin PBXFileReference section */
 		AC0295E2277E4A910058D664 /* Covid19APIByCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountryResponse.swift; sourceTree = "<group>"; };
+		AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = c19widgetUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateNamesHelperTests.swift; sourceTree = "<group>"; };
+		AC38133F2790679A00A1514C /* LocationManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagable.swift; sourceTree = "<group>"; };
+		AC38134227909BA800A1514C /* LocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerMock.swift; sourceTree = "<group>"; };
 		AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewModel.swift; sourceTree = "<group>"; };
 		AC4C9E60278DEED300FD573A /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		AC559E55277E175400F2A382 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC559E56277E20D900F2A382 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
+		AC8AA61B27B1B4C700B3BA16 /* Covid19APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIClientTests.swift; sourceTree = "<group>"; };
+		AC8AA62027B1BEC500B3BA16 /* c19Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c19Response.json; sourceTree = "<group>"; };
 		AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c19widgetApp.swift; sourceTree = "<group>"; };
 		AC8BDD80277CEB3E00B702B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC8BDD81277CEB3F00B702B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,13 +103,24 @@
 		AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
 		AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		AC8BDDC1277CEFD800B702B2 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		ACA87F0827B307F60033B740 /* Covid19APIURLBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIURLBuildable.swift; sourceTree = "<group>"; };
 		ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIByCountry.swift; sourceTree = "<group>"; };
+		ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
 		ACD7B2172787913C00E5BF9B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "c19widget--iOS--Info.plist"; sourceTree = "<group>"; };
 		ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNamesHelper.swift; sourceTree = "<group>"; };
+		ACFAB8D927976BDF007D8280 /* Placemarkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placemarkable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC35E95B278E20C6003DB041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8AA61F27B1B70300B3BA16 /* Mocker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC8BDD83277CEB3F00B702B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,10 +152,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC35E95F278E20C6003DB041 /* c19widgetUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC8AA62027B1BEC500B3BA16 /* c19Response.json */,
+				AC35E960278E20C6003DB041 /* StateNamesHelperTests.swift */,
+				AC8AA61B27B1B4C700B3BA16 /* Covid19APIClientTests.swift */,
+				AC57E9F8278E300700F3FAE1 /* DateHelperTests.swift */,
+				ACB9CE10278F5A67000544CE /* LocationManagerTests.swift */,
+				AC38134227909BA800A1514C /* LocationManagerMock.swift */,
+			);
+			path = c19widgetUnitTests;
+			sourceTree = "<group>";
+		};
 		AC8BDD79277CEB3E00B702B2 = {
 			isa = PBXGroup;
 			children = (
 				ACD7B21A2787992F00E5BF9B /* c19widget--iOS--Info.plist */,
+				AC35E95F278E20C6003DB041 /* c19widgetUnitTests */,
 				AC8BDD96277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDD7E277CEB3E00B702B2 /* Shared */,
 				AC8BDD8D277CEB3F00B702B2 /* macOS */,
@@ -137,13 +188,16 @@
 				AC8BDD7F277CEB3E00B702B2 /* c19widgetApp.swift */,
 				AC8BDD80277CEB3E00B702B2 /* ContentView.swift */,
 				ACD7B2172787913C00E5BF9B /* LocationManager.swift */,
+				ACFAB8D927976BDF007D8280 /* Placemarkable.swift */,
 				AC4C9E5D2788DB4D00FD573A /* BarChartViewModel.swift */,
+				AC38133F2790679A00A1514C /* LocationManagable.swift */,
 				ACD7B21E2787B7BA00E5BF9B /* LocationNamesHelper.swift */,
 				ACB05B872784CB1200B4E49E /* Covid19APIByCountry.swift */,
 				AC8BDDBB277CEE8400B702B2 /* BarChartCell.swift */,
 				AC8BDDBE277CEF9B00B702B2 /* BarChart.swift */,
 				AC8BDDC1277CEFD800B702B2 /* ChartData.swift */,
 				AC8BDD81277CEB3F00B702B2 /* Assets.xcassets */,
+				ACA87F0827B307F60033B740 /* Covid19APIURLBuildable.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -155,6 +209,7 @@
 				AC8BDD8C277CEB3F00B702B2 /* c19widget.app */,
 				AC8BDD93277CEB3F00B702B2 /* Tests iOS.xctest */,
 				AC8BDD9F277CEB3F00B702B2 /* Tests macOS.xctest */,
+				AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +243,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC35E95D278E20C6003DB041 /* c19widgetUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC35E964278E20C6003DB041 /* Build configuration list for PBXNativeTarget "c19widgetUnitTests" */;
+			buildPhases = (
+				AC35E95A278E20C6003DB041 /* Sources */,
+				AC35E95B278E20C6003DB041 /* Frameworks */,
+				AC35E95C278E20C6003DB041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC35E963278E20C6003DB041 /* PBXTargetDependency */,
+			);
+			name = c19widgetUnitTests;
+			packageProductDependencies = (
+				AC8AA61E27B1B70300B3BA16 /* Mocker */,
+			);
+			productName = c19widgetUnitTests;
+			productReference = AC35E95E278E20C6003DB041 /* c19widgetUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AC8BDD85277CEB3F00B702B2 /* c19widget (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC8BDDAF277CEB3F00B702B2 /* Build configuration list for PBXNativeTarget "c19widget (iOS)" */;
@@ -268,6 +344,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					AC35E95D278E20C6003DB041 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AC8BDD85277CEB3F00B702B2;
+					};
 					AC8BDD85277CEB3F00B702B2 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -293,6 +373,9 @@
 				Base,
 			);
 			mainGroup = AC8BDD79277CEB3E00B702B2;
+			packageReferences = (
+				AC8AA61D27B1B70300B3BA16 /* XCRemoteSwiftPackageReference "Mocker" */,
+			);
 			productRefGroup = AC8BDD87277CEB3F00B702B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,11 +384,20 @@
 				AC8BDD8B277CEB3F00B702B2 /* c19widget (macOS) */,
 				AC8BDD92277CEB3F00B702B2 /* Tests iOS */,
 				AC8BDD9E277CEB3F00B702B2 /* Tests macOS */,
+				AC35E95D278E20C6003DB041 /* c19widgetUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC35E95C278E20C6003DB041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8AA62127B1BEC500B3BA16 /* c19Response.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC8BDD84277CEB3F00B702B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,10 +431,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC35E95A278E20C6003DB041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB9CE11278F5A67000544CE /* LocationManagerTests.swift in Sources */,
+				AC35E961278E20C6003DB041 /* StateNamesHelperTests.swift in Sources */,
+				AC8AA61C27B1B4C700B3BA16 /* Covid19APIClientTests.swift in Sources */,
+				ACA87F0927B307F60033B740 /* Covid19APIURLBuildable.swift in Sources */,
+				AC38134327909BA800A1514C /* LocationManagerMock.swift in Sources */,
+				AC57E9F9278E300700F3FAE1 /* DateHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC8BDD82277CEB3F00B702B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFAB8DA27976BDF007D8280 /* Placemarkable.swift in Sources */,
+				AC3813402790679A00A1514C /* LocationManagable.swift in Sources */,
 				AC8BDDBF277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC2277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC4C9E5E2788DB4D00FD573A /* BarChartViewModel.swift in Sources */,
@@ -362,6 +469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFAB8DB27976BDF007D8280 /* Placemarkable.swift in Sources */,
+				AC3813412790679A00A1514C /* LocationManagable.swift in Sources */,
 				AC8BDDC0277CEF9B00B702B2 /* BarChart.swift in Sources */,
 				AC8BDDC3277CEFD800B702B2 /* ChartData.swift in Sources */,
 				AC4C9E5F2788DB4D00FD573A /* BarChartViewModel.swift in Sources */,
@@ -398,6 +507,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC35E963278E20C6003DB041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC8BDD85277CEB3F00B702B2 /* c19widget (iOS) */;
+			targetProxy = AC35E962278E20C6003DB041 /* PBXContainerItemProxy */;
+		};
 		AC8BDD95277CEB3F00B702B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC8BDD85277CEB3F00B702B2 /* c19widget (iOS) */;
@@ -411,6 +525,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AC35E965278E20C6003DB041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QY69PUF72;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joybending.c19widgetUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c19widget.app/c19widget";
+			};
+			name = Debug;
+		};
+		AC35E966278E20C6003DB041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QY69PUF72;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joybending.c19widgetUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c19widget.app/c19widget";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		AC8BDDAD277CEB3F00B702B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +686,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QY69PUF72;
 				ENABLE_PREVIEWS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "c19widget--iOS--Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
@@ -563,6 +719,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QY69PUF72;
 				ENABLE_PREVIEWS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "c19widget--iOS--Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to present COVID-19 case counts local to your area.";
@@ -719,6 +876,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC35E964278E20C6003DB041 /* Build configuration list for PBXNativeTarget "c19widgetUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC35E965278E20C6003DB041 /* Debug */,
+				AC35E966278E20C6003DB041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC8BDD7D277CEB3E00B702B2 /* Build configuration list for PBXProject "c19widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -765,6 +931,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC8AA61D27B1B70300B3BA16 /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC8AA61E27B1B70300B3BA16 /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC8AA61D27B1B70300B3BA16 /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC8BDD7A277CEB3E00B702B2 /* Project object */;
 }
