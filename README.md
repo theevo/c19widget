@@ -1,5 +1,7 @@
 # COVID-19 Widget
 
+![The COVID-19 Widget displays 7 days worth of case counts in New York County](/readme_images/c19widget_nyc.png)
+
 ## ToDo
 
 - `.onAppear` does not trigger after even 30 minutes after being in the background. what will work?
@@ -15,9 +17,11 @@ Display a 7-day graph of cases in your country.
 
 ## Data Quirks
 
-### API is recording data 1 day late
+### C19API is 1 day behind New York Health Data
 
 I was able to to match confirmed cases against [health.data.ny.gov](https://health.data.ny.gov/Health/New-York-State-Statewide-COVID-19-Testing/xdss-u53e/data), and this gives me confidence in the numbers Covid19Api is reporting.
+
+![The COVID-19 Widget displays 7 days worth of case counts in New York County](/readme_images/c19widget_nyc_check.png)
 
 However, there is just a little quirk.
 
