@@ -2,11 +2,6 @@
 
 ![The COVID-19 Widget displays 7 days worth of case counts in New York County](/readme_images/c19widget_nyc.png)
 
-## ToDo
-
-- `.onAppear` does not trigger after even 30 minutes after being in the background. what will work?
-
-
 ## Overview
 
 Display a 7-day graph of cases in your country.
@@ -73,3 +68,6 @@ And most importantly, where the hell is C19API pulling their data from?
 
 [https://swdevnotes.com/swift/2021/how-to-create-bar-chart-swiftui/](https://swdevnotes.com/swift/2021/how-to-create-bar-chart-swiftui/)
 
+## ToDo
+
+- `.onAppear` does not trigger after even 30 minutes after being in the background. what will work?
